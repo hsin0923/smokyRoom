@@ -8,9 +8,10 @@ OpenCV opencv;
 
 ArrayList<Contour> contours;
 ArrayList<Contour> polygons;
-boolean sketchFullScreen() {
+/*boolean sketchFullScreen() {
   return true;
-}
+}*/
+
 void setup() {
 
   size(640, 480);
