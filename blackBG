@@ -66,7 +66,8 @@ void mousePressed()
   sendStart_local(mouseX, mouseY);
 }
 
-void keyPressed()
+/*void keyPressed()
 {
   oscKeyPressed(key);
 }
+*/
