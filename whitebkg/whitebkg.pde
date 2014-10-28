@@ -56,13 +56,13 @@ void draw() {
     image(dst, 0, 0);
 
     noFill();
-    strokeWeight(2);
+    strokeWeight(1);
 
     for (Contour contour : contours) {
-      stroke(0, 0, 255);
+      stroke(255, 255, 255);
       contour.draw();
 
-      stroke(255, 0, 0);
+      stroke(0, 0, 0);
        beginShape();
        for (PVector point : contour.getPolygonApproximation ().getPoints()) {
        sendStart_local((int)point.x, (int)point.y);

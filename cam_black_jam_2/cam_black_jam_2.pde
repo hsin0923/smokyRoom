@@ -8,9 +8,9 @@ OpenCV opencv;
 PImage src, dst;
 ArrayList<Contour> contours;
 ArrayList<Contour> polygons;
-boolean sketchFullScreen() {
+/*boolean sketchFullScreen() {
   return true;
-}
+}*/
 void setup() {
   size(640, 480);
   frameRate(30);
@@ -43,13 +43,13 @@ void draw() {
     image(dst, 0, 0);
 
     noFill();
-    strokeWeight(3);
+    strokeWeight(1);
 
     for (Contour contour : contours) {
-      stroke(0, 0, 255);
+      stroke(255, 255, 255);
       contour.draw();
 
-      stroke(255, 0, 0);
+      stroke(0, 0, 0);
       beginShape();
       for (PVector point : contour.getConvexHull ().getPoints()) {
         sendStart_local((int)point.x, (int)point.y);
